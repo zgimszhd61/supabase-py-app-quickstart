@@ -2,6 +2,8 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 import os
 
+## 其中supabase的url和key在这里获得：项目地址如 https://supabase.com/dashboard/project/zcxjeufomtswakwdqugv -> connect -> app framework
+
 # CREATE TABLE IF NOT EXISTS customusers (
 #     id serial PRIMARY KEY,
 #     username text UNIQUE NOT NULL,
