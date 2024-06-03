@@ -15,7 +15,7 @@ url: str = os.environ.get("SUPABASE_URL")
 key: str = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(url, key)
 
-# data, count = supabase.table('customusers').insert({"username": 'aa', "password": "fbbaaa"}).execute()
+data, count = supabase.table('customusers').insert({"username": 'aa', "password": "fbbaaa"}).execute()
 
 response = supabase.table('customusers').select("*").execute()
 for item in response:
